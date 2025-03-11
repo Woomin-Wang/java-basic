@@ -14,11 +14,11 @@ public class JavaMemoryMain2 {
         method2(data1);
         System.out.println("method1 end");
     }
-
     static void method2(Data data2) {
         System.out.println("method2 start");
         System.out.println("data.value=" + data2.getValue());
         System.out.println("method2 end");
+
     }
 
 }

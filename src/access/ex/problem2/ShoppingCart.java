@@ -6,13 +6,11 @@ public class ShoppingCart {
     private Item[] items = new Item[10];
     private int itemCount;
 
-
     public void addItem(Item item) {
         if (itemCount >= items.length) { // 배열이므로 .length 사용 가능
             System.out.println("장바구니가 가득 찼습니다.");
             return;
         }
-
         items[itemCount] = item;
         itemCount++; // 장바구니에 추가할 때마다 카운트 +1
     }
@@ -24,7 +22,6 @@ public class ShoppingCart {
             Item item = items[i];
             System.out.println("상품명:" + item.getName() + ", 합계:" + item.getTotalPrice());
         }
-
         System.out.println("전체 가격 합:" + calculateTotalPrice());
     }
 
